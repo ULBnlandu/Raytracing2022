@@ -1,0 +1,124 @@
+# coding=utf-8
+import matplotlib.pyplot as plt
+plt.figure(figsize=(20,5)) # Redimmensionner l'affichage pour y voir plus clair
+# Définir les contours
+x = [0, 31, 32, 32, 31,0,-4, -4, 0]
+y = [0, 0, 1, 7, 8, 8, 7.7384, 0.2616, 0]
+# Définir les parois structurelles
+x1 = [0, 0]
+y1 = [0, 3]
+x2 = [0, 0]
+y2 = [8, 5]
+x3 = [8, 8]
+y3 = [0, 3]
+x4 = [8, 8]
+y4 = [8, 5]
+x5 = [26, 26]
+y5 = [0, 3]
+x6 = [26, 26]
+y6 = [8, 5]
+x7 = [28, 28]
+y7 = [0, 3]
+x8 = [28, 28]
+y8 = [8, 5]
+#Définir les rangées de sièges
+i1 = [2, 2]
+j1 = [0, 3]
+i2 = [2, 2]
+j2 = [8,5]
+i3 = [4,4]
+j3 = [0,3]
+i4 = [4,4]
+j4 = [8,5]
+i5 = [6,6]
+j5 = [0,3]
+i6 = [6,6]
+j6 = [8,5]
+i7 = [10, 10]
+j7 = [0, 3]
+i8 = [10, 10]
+j8 = [8, 5]
+i9 = [11.5, 11.5]
+j9 = [0,3]
+i10 = [11.5, 11.5]
+j10 = [8, 5]
+i11 = [13, 13]
+j11 = [0,3]
+i12 = [13, 13]
+j12 = [8, 5]
+i13 = [14.5, 14.5]
+j13 = [0,3]
+i14 = [14.5, 14.5]
+j14 = [8, 5]
+i15 = [16, 16]
+j15 = [0,3]
+i16 = [16,16]
+j16 = [8,5]
+i17 = [17.5, 17.5]
+j17 = [0,3]
+i18 = [17.5, 17.5]
+j18 = [8,5]
+i19 = [19, 19]
+j19 = [0,3]
+i20 = [19,19]
+j20 = [8,5]
+i21 = [20.5, 20.5]
+j21 = [0,3]
+i22 = [20.5, 20.5]
+j22 = [8,5]
+i23 = [22, 22]
+j23 = [0,3]
+i24 = [22, 22]
+j24 = [8,5]
+i25 = [23.5,23.5]
+j25 = [0,3]
+i26 = [23.5, 23.5]
+j26 = [8,5]
+i27 = [25, 25]
+j27 = [0,3]
+i28 = [25, 25]
+j28 = [8,5]
+# On dessine les parois extérieurs de l'avion
+plt.plot(x,y)
+# Ensuite on dessine les parois structurelles
+plt.plot(x1, y1, color = 'black')
+plt.plot(x2,y2, color = 'black')
+plt.plot(x3,y3, color = 'black')
+plt.plot(x4,y4, color = 'black')
+plt.plot(x5,y5, color = 'black')
+plt.plot(x6,y6, color = 'black')
+plt.plot(x7,y7, color = 'black')
+plt.plot(x8,y8, color = 'black')
+# Ensuite on dessine les rangées de sièges
+plt.plot(i1,j1, color = 'green')
+plt.plot(i2,j2, color = 'green')
+plt.plot(i3,j3, color = 'green')
+plt.plot(i4,j4, color = 'green')
+plt.plot(i5,j5, color = 'green')
+plt.plot(i6,j6, color = 'green')
+plt.plot(i7,j7, color = 'green')
+plt.plot(i8,j8, color = 'green')
+plt.plot(i9,j9, color = 'green')
+plt.plot(i10,j10, color = 'green')
+plt.plot(i11,j11, color = 'green')
+plt.plot(i12,j12, color = 'green')
+plt.plot(i13,j13, color = 'green')
+plt.plot(i14,j14, color = 'green')
+plt.plot(i15,j15, color = 'green')
+plt.plot(i16,j16, color = 'green')
+plt.plot(i17,j17, color = 'green')
+plt.plot(i18,j18, color = 'green')
+plt.plot(i19,j19, color = 'green')
+plt.plot(i20,j20, color = 'green')
+plt.plot(i21,j21, color = 'green')
+plt.plot(i22,j22, color = 'green')
+plt.plot(i23,j23, color = 'green')
+plt.plot(i24,j24, color = 'green')
+plt.plot(i25,j25, color = 'green')
+plt.plot(i26,j26, color = 'green')
+plt.plot(i27,j27, color = 'green')
+plt.plot(i28,j28, color = 'green')
+
+plt.margins(0.1, 0.1)
+plt.show()
+plt.close()
