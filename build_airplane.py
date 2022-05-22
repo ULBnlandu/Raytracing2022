@@ -7,7 +7,6 @@ from ondes_transmission import ondes_transmission
 from position import Position
 from emetteur import Emetteur
 from plane import Plane
-from ondes_directes import ondes_directes
 from ondes_reflexion import ondes_reflexion
 from ondes_doubles_reflexion import ondes_doubles_reflexions
 from ondes_triples_reflexions import ondes_triples_reflexions
@@ -104,13 +103,13 @@ for siege in sieges_deuxieme_classe:
 
 emetteurs = []
 emetteurs.append(Emetteur(Position(19,2), 0.1, 1.7, 73))
-emetteurs.append(Emetteur(Position(41,7), 0.1, 1.7, 73))
+emetteurs.append(Emetteur(Position(29.5,4), 0.1, 1.7, 73))
 plane = Plane(obstacles, emetteurs, step)
 plane.buildRecepteurs()
 ondes_transmission(plane)
-#ondes_reflexion(plane)
-#ondes_doubles_reflexions(plane)
-#ondes_triples_reflexions(plane)
+# ondes_reflexion(plane)
+# ondes_doubles_reflexions(plane)
+# ondes_triples_reflexions(plane)
 plane.plotHeatMapdBm()
 plane.plotHeatMapdMbs()
 #plane.plot()

@@ -19,7 +19,7 @@ def coeff_transmissions(obstacles, recepteur, emetteur):
         pos3 = emetteur.getPosition()
         pos4 = recepteur.getPosition()
         intersection = fonctions.findIntersection(pos1, pos2, pos3, pos4)
-        if(intersection and fonctions.pointAppartientAObstacle(intersection, obstacle) == False): # Si les segments se touchent
+        if(intersection and fonctions.pointAppartientAObstacle(emetteur.getPosition(), obstacle) == False and fonctions.pointAppartientAObstacle(recepteur.getPosition(), obstacle) == False): # Si les segments se touchent
             #Si l'intersection est pile poil sur l'obstacle on ne doit pas considérer la transmission !!
             epsilon0 = 8.85418782 * 10 **(-12)
             epsilon = obstacle.getEpsilon()

@@ -126,7 +126,7 @@ def findIntersection(pos1, pos2, pos3, pos4):
         else:
             return False
 
-def findThetaI(pos1, pos2, obstacle): # semble fonctionner
+def findThetaI(pos1, pos2, obstacle):
     # Trouve l'angle Theta incidient entre un obstacle 
     # et une onde. Utilise la formule du produit scalaire de 2 vecteurs 
     # pos1 correspond au recepteur / image 

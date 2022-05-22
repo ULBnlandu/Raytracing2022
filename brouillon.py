@@ -17,7 +17,8 @@ contours = [
 ]
 
 murs = [
-    [(5, 0), (5, 20)]
+    [(10, 0), (10, 7.5)],
+    [(10, 20), (10, 12.5)]
 ]
 obstacles = []
 for contour in contours:
@@ -30,11 +31,11 @@ for rangee in murs:
     start = Position(rangee[0][0], rangee[0][1])
     end = Position(rangee[1][0], rangee[1][1])
     mur = Obstacle(start,end,"GRP", 2.25, 0.003, 0.1, False)
-    #obstacles.append(mur)
+    obstacles.append(mur)
 
 emetteurs = []
-emetteur = Emetteur(Position(10,10), 0.1, 1.7, 73); emetteurs.append(emetteur)
+emetteur = Emetteur(Position(5,15), 0.1, 1.7, 73); emetteurs.append(emetteur)
 plane = Plane(obstacles, emetteurs, step)
 plane.buildRecepteurs()
-ondes_simples_reflexion(plane)
+ondes_reflexion(plane)
 plane.plotHeatMapdBm()
